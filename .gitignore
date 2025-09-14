@@ -1,8 +1,15 @@
 # Visual Studio Code 설정 파일
-.vscode/
+/.vscode/
 
-# SDL 등 외부 라이브러리 파일
-external/
+# 프로젝트 빌드 파일
+
+/bin/
 
 # CMake 빌드 파일
-build/
+/build/
+
+# 예제 파일
+/example/
+
+# SDL 등 외부 라이브러리 파일
+/external/

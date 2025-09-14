@@ -1,7 +1,7 @@
 #ifndef NACHO_GAME_HPP
 #define NACHO_GAME_HPP
 
-#include <SDL/SDL.h>
+#include <SDL3/SDL.h>
 
 namespace nacho {
     class Game {
@@ -47,6 +47,6 @@ namespace nacho {
          * @brief 게임이 계속 실행되어야 하는지 판단
          */
         bool _is_running;
-    }
+    };
 }
 #endif 
