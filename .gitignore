@@ -1,7 +1,7 @@
 # Visual Studio Code 설정 파일
 /.vscode/
 
-# 프로젝트 빌드 파일
+# 프로젝트 설치 파일
 /bin/
 
 # CMake 빌드 파일

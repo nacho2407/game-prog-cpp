@@ -5,7 +5,7 @@ Game Programming in C++ 연습 코드
 
 ## Dependencies
 
-### 1. [SDL](https://github.com/libsdl-org/SDL)**
+### 1. [SDL](https://github.com/libsdl-org/SDL)
 
 Simple DirectMedia Layer
 

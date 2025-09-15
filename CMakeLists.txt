@@ -17,10 +17,19 @@ set(SDL3_DIR "${SDL3_ROOT}/${_SDL_TRIPLET}/lib/cmake/SDL3")
 find_package(SDL3 CONFIG REQUIRED)
 
 add_executable(game
-    src/Game.cpp
-    src/main.cpp
+    "${CMAKE_SOURCE_DIR}/src/Game.cpp"
+    "${CMAKE_SOURCE_DIR}/src/main.cpp"
 )
 
-target_include_directories(game PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(game PRIVATE "${CMAKE_SOURCE_DIR}/include")
 
 target_link_libraries(game PRIVATE SDL3::SDL3)
+
+install(TARGETS game
+    RUNTIME DESTINATION "${CMAKE_SOURCE_DIR}/bin"
+)
+
+install(FILES
+    "${SDL3_ROOT}/${_SDL_TRIPLET}/bin/SDL3.dll"
+    DESTINATION "${CMAKE_SOURCE_DIR}/bin"
+)
