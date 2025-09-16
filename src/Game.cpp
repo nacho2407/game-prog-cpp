@@ -20,6 +20,8 @@ namespace nacho {
             return false;
         }
 
+        _is_running = true;
+
         return true;
     }
 

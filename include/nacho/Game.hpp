@@ -9,7 +9,7 @@ namespace nacho {
      */
     class Game {
     public:
-        Game(void): _window(nullptr), _is_running(true) { };
+        Game(void): _window(nullptr), _is_running(false) { };
 
         /**
          * @brief 게임을 초기화합니다
