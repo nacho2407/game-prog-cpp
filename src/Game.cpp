@@ -2,6 +2,9 @@
 
 namespace nacho {
     bool Game::initialize(void) {
+        // 초기화는 한 번만 되도록 보장
+        static bool is_init = false;
+
         bool sdl_result = SDL_Init(SDL_INIT_VIDEO);
         if (!sdl_result) {
             SDL_Log("[error] failed to initialize SDL: %s", SDL_GetError());
@@ -22,6 +25,7 @@ namespace nacho {
 
         _is_running = true;
 
+        is_init = true;
         return true;
     }
 
